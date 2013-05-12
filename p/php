@@ -1,0 +1,5 @@
+<?php
+$sushi=$_REQUEST['sushi'];
+echo "sushi=$sushi <br>";
+$kilkist=$_REQUEST['kilkist'];
+echo "kilkist=$kilkist <br>";
