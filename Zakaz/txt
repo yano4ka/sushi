@@ -18,19 +18,19 @@ var ціна=parseFloat(document.myform.ціна.value);
 
 var кількість=parseFloat(document.myform.кількість.value);
 
-if(document.myform.mebly[0].checked)
+if(document.myform.sushi[0].checked)
 document.myform.result.value="Замовлення складає="+(50*кількість);
 else
-if(document.myform.mebly[1].checked)
+if(document.myform.sushi[1].checked)
 document.myform.result.value="Замовлення складає="+(300*кількість);
 else
-if(document.myform.mebly[2].checked)
+if(document.myform.sushi[2].checked)
 document.myform.result.value="Замовлення складає="+(100*кількість);
 else
-if(document.myform.mebly[3].checked)
+if(document.myform.sushi[3].checked)
 document.myform.result.value="Замовлення складає="+(200*кількість);
 else
-if(document.myform.mebly[4].checked)
+if(document.myform.sushi[4].checked)
 document.myform.result.value="Замовлення складає="+(100*кількість);
 else
 document.myform.result.value="Замовлення складає="+(0*кількість);
@@ -43,23 +43,23 @@ document.myform.result.value="Замовлення складає="+(0*кіль�
 <Br><Br><Br>
 
 <p>Ми пропонуємо Вам: </p>
-<p><input type="radio" name="mebly" value="rad1">Супчик "Якіто"(подвійна порція)
+<p><input type="radio" name="sushi" value="rad1">Супчик "Якіто"(подвійна порція)
 <label>
 * <input type=reset value="50 грн" name=ціна><br>
 </label>
-   <input type="radio" name="mebly" value="rad2">Суші набір (філадельфія, роли з лососем, роли з тунцем у кунжуті)
+   <input type="radio" name="sushi" value="rad2">Суші набір (філадельфія, роли з лососем, роли з тунцем у кунжуті)
 <label>
 * <input type=reset value="300 грн" name=ціна><br>
 </label>
-   <input type="radio" name="mebly" value="rad3">Червоний дракон
+   <input type="radio" name="sushi" value="rad3">Червоний дракон
 <label>
 * <input type=reset value="100 грн" name=ціна><br>
 </label>
- <input type="radio" name="mebly" value="rad4">Рис з овочами та салат із риби та морепродуктів
+ <input type="radio" name="sushi" value="rad4">Рис з овочами та салат із риби та морепродуктів
 <label>
 * <input type=reset value="200 грн" name=ціна><br>
 </label>
- <input type="radio" name="mebly" value="rad5">Золотистий дракон
+ <input type="radio" name="sushi" value="rad5">Золотистий дракон
 <label>
 * <input type=reset value="100 грн" name=ціна><br>
 </label></p>
