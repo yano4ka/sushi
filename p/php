@@ -3,3 +3,10 @@ $sushi=$_REQUEST['sushi'];
 echo "sushi=$sushi <br>";
 $kilkist=$_REQUEST['kilkist'];
 echo "kilkist=$kilkist <br>";
+$result=$_REQUEST['result'];
+echo "result=$result <br>";
+$fp=fopen("re.txt","a");
+fputs($fp,"$sushi\$kilkist\t$result\t");
+fclose($fp);
+
+?>
