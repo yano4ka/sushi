@@ -14,30 +14,31 @@ alert("I was touched!");
 function calculate()
 {
 
-var ціна=parseFloat(document.myform.ціна.value);
+var price=parseFloat(document.myform.price.value);
 
-var кількість=parseFloat(document.myform.кількість.value);
+var kilkist=parseFloat(document.myform.kilkist.value);
 
 if(document.myform.sushi[0].checked)
-document.myform.result.value="Замовлення складає="+(50*кількість);
+document.myform.result.value="Замовлення складає="+(50*kilkist);
 else
 if(document.myform.sushi[1].checked)
-document.myform.result.value="Замовлення складає="+(300*кількість);
+document.myform.result.value="Замовлення складає="+(300*kilkist);
 else
 if(document.myform.sushi[2].checked)
-document.myform.result.value="Замовлення складає="+(100*кількість);
+document.myform.result.value="Замовлення складає="+(100*kilkist);
 else
 if(document.myform.sushi[3].checked)
-document.myform.result.value="Замовлення складає="+(200*кількість);
+document.myform.result.value="Замовлення складає="+(200*kilkist);
 else
 if(document.myform.sushi[4].checked)
-document.myform.result.value="Замовлення складає="+(100*кількість);
+document.myform.result.value="Замовлення складає="+(100*kilkist);
 else
-document.myform.result.value="Замовлення складає="+(0*кількість);
+document.myform.result.value="Замовлення складає="+(0*kilkist);
 }
 </script>
 </head>
 <body>
+<form name=myform action="p.php">
 <form name=myform>
 <p align="center"><FONT SIZE=+2 COLOR="Broun">Ми працюємо для Вас</FONT>  
 <Br><Br><Br>
@@ -45,15 +46,15 @@ document.myform.result.value="Замовлення складає="+(0*кіль�
 <p>Ми пропонуємо Вам: </p>
 <p><input type="radio" name="sushi" value="rad1">Супчик "Якіто"(подвійна порція)
 <label>
-* <input type=reset value="50 грн" name=ціна><br>
+* <input type=reset value="50 грн" name=price><br>
 </label>
    <input type="radio" name="sushi" value="rad2">Суші набір (філадельфія, роли з лососем, роли з тунцем у кунжуті)
 <label>
-* <input type=reset value="300 грн" name=ціна><br>
+* <input type=reset value="300 грн" name=price><br>
 </label>
    <input type="radio" name="sushi" value="rad3">Червоний дракон
 <label>
-* <input type=reset value="100 грн" name=ціна><br>
+* <input type=reset value="100 грн" name=price><br>
 </label>
  <input type="radio" name="sushi" value="rad4">Рис з овочами та салат із риби та морепродуктів
 <label>
@@ -61,17 +62,18 @@ document.myform.result.value="Замовлення складає="+(0*кіль�
 </label>
  <input type="radio" name="sushi" value="rad5">Золотистий дракон
 <label>
-* <input type=reset value="100 грн" name=ціна><br>
+* <input type=reset value="100 грн" name=price><br>
 </label></p>
 
 <br>
 <input type=reset value="Очистити">
 <br>
 <label>
-Кількість -  <input type=text name=кількість><br>
+Кількість -  <input type=text name=kilkist><br>
 </label><Br>
 
 <input type=button value="Вартість замовлення" onClick="calculate();"><br>
+<input type=submit value="переглянути замовлення"><br>
 <textarea name=result>
 </textarea>
 
